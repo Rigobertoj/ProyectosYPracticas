@@ -10,7 +10,7 @@ class Targeta():
             print("nombre del titular --> {}".format(self.titular))
             print("numero de serie --> {}".format(self.numero))
     
-    def __init__(self, fecha = None):
+    def fecha(self, fecha = None):
         self.fecha = fecha
         if fecha is not None:
             print("fecha de emicion de la targeta {}".format(self.fecha))
@@ -18,11 +18,12 @@ class Targeta():
     def activacion(self):
         print("targeta activada lista para su uso")
         
-    def deposito(self, cantidad):
-        print("monto depositado {}".format(cantidad))
-        self.valor = self.valor + cantidad 
+    def deposito(self, monto):
+        print("monto depositado {}".format(monto))
+        self.valor = self.valor + monto
         
     def tranferir(self, monto):
         pass
-
-targeta_1 = Targeta("1234 5678 9876 5432", "rigoberto")
+        
+targeta1 = Targeta()
+targeta1.fecha("12/24/2021")
