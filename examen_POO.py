@@ -1,8 +1,9 @@
-# Completa el ejercicio aquí
 import math
 class Punto():
     x = 0 
     y = 0 
+    x2 = 0
+    y2 = 0
     def __init__(self, x = None, y = None ):
         self.x = x
         self.y = y
@@ -25,10 +26,11 @@ class Punto():
             
         else:
             print("tu punto esta en el origen (0,0)")
+            
     def vector(self, x2 = None, y2 = None):
         if x2 is not None and y2 is not None:
-            self.x2
-            self.y2
+            self.x2 = x2
+            self.y2 = y2
             v = (self.x2 - self.x, self.y2 - self.y)
             print(v)
         else:
