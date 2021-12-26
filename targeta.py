@@ -19,10 +19,10 @@ class Targeta():
         print("targeta activada lista para su uso")
         
     def deposito(self, cantidad):
-        print("cual es el monto a ingresar")
-        self.cantidad = cantidad
+        print("monto depositado {}".format(cantidad))
+        self.valor = self.valor + cantidad 
         
     def tranferir(self, monto):
         pass
 
-targeta = Targeta()
+targeta_1 = Targeta("1234 5678 9876 5432", "rigoberto")
