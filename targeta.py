@@ -1,4 +1,4 @@
-class Targeta():
+class targeta():
     valor = 0
     entidad_bancaria = "Banamex" 
     
@@ -24,6 +24,5 @@ class Targeta():
         
     def tranferir(self, monto):
         pass
-        
-targeta1 = Targeta()
+targeta1 = targeta("1234 5678 9876 5432", "rigoberto")
 targeta1.fecha("12/24/2021")
