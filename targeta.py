@@ -61,3 +61,17 @@ targeta1.fecha("12/24/2021")
 targeta2 = targeta("2345 6789 1011 1213", "Brenda Yoseli Madriz Ojeda")
 targeta2.fecha("26/24/2021")
 targeta2.activacion()
+
+class Banco():
+    targetas = [{}] #agregamos una lista con un diccionario anidado para tener el nombre del titular y su numero 
+    
+    #metodo que funciona para ver los ususarios que allan en la base de datos
+    def usuarios(self): 
+        for usuarios in self.targetas: #se itera la lista para extraer el diccionario y asi manipular su informacion 
+            for usuario,iD in usuarios.items():#gracias al metodo items() podemos iterar mas faccil un diccionario y su clave y valor 
+                print(usuario,iD)#iteramos clave y valor 
+    
+    def agregar_usuario(self,U, x,targeta = [{}],): #agregamos una base de datos interna como parametro, y las demas varibles/parametros
+        for t in self.targetas: #iteramos la base de datos primaria de targetas 
+            t[U] = x #agregamos clave(nombre del titular) y valor(numero de targeta) 
+            print(t) #imprimimos la iteracion para confimar que todo estubo correcto 
