@@ -74,4 +74,4 @@ class Banco():
     def agregar_usuario(self,U, x,targeta = [{}],): #agregamos una base de datos interna como parametro, y las demas varibles/parametros
         for t in self.targetas: #iteramos la base de datos primaria de targetas 
             t[U] = x #agregamos clave(nombre del titular) y valor(numero de targeta) 
-            print(t) #imprimimos la iteracion para confimar que todo estubo correcto 
+            print(t) #imprimimos la iteracion para confimar  
