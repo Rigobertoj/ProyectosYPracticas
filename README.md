@@ -1,2 +1,2 @@
-# ProyectosYPracticas
-una manera de dar a conocer algunas de mis habilidades
+# projects and practices
+a way to show some of my skills
